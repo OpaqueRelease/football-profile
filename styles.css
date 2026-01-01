@@ -716,6 +716,42 @@ p {
   }
 }
 
+/* ---------- Video analysis ---------- */
+
+.video-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: rgba(5, 8, 20, 0.88);
+  box-shadow: var(--shadow-soft);
+  padding: 1rem;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: calc(var(--radius-lg) - 6px);
+  overflow: hidden;
+  background: radial-gradient(circle at top left, #161f44, #050814 55%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.video-embed iframe,
+.video-embed video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-embed video {
+  object-fit: contain;
+  background: #000;
+}
+
 /* ---------- Steps / Approach ---------- */
 
 .steps {
