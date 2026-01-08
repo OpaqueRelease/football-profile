@@ -808,6 +808,10 @@ p {
   background: #000;
 }
 
+.video-shell .viz-header + .video-embed {
+  margin-top: 1rem;
+}
+
 .viz-section {
   margin-top: 1.25rem;
   padding-top: 1.25rem;
