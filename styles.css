@@ -794,6 +794,68 @@ p {
   background: #000;
 }
 
+.viz-section {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.viz-header h3 {
+  margin-top: 0.25rem;
+}
+
+.viz-subtitle {
+  margin: 0.6rem 0 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.viz-card {
+  margin: 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.65);
+  padding: 0.85rem;
+}
+
+.viz-card a {
+  display: block;
+  border-radius: calc(var(--radius-md) - 6px);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: #fff;
+}
+
+.viz-card img {
+  width: 100%;
+  height: auto;
+}
+
+.viz-card figcaption {
+  margin-top: 0.75rem;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.viz-card figcaption strong {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .viz-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* ---------- Steps / Approach ---------- */
 
 .steps {
