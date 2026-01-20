@@ -812,6 +812,10 @@ p {
   margin-top: 1rem;
 }
 
+.video-shell .video-embed + .viz-header {
+  margin-top: 1.25rem;
+}
+
 .viz-section {
   margin-top: 1.25rem;
   padding-top: 1.25rem;
